@@ -28,8 +28,7 @@ life_cycle: pre-alpha
 license: CC-BY 4.0
 
 # Link to the source repository for this lesson
-source: https://github.com/LearnToDiscover/Basic_Python.git
-# https://github.com/carpentries/workbench-template-rmd
+source: https://github.com/LearnToDiscover/Basic_Python/
 
 url: https://learntodiscover.github.io/Basic_Python/
 # Default branch of your lesson
