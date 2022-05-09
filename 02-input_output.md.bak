@@ -149,6 +149,10 @@ We know **```print()```** is a *function* because it ends with a pair of parenth
 
 ::::::::::::::::::::::::::::::::::::: 
 
+
+
+
+
 We can pass more than a single value to the **```print()```** function, provided that they are separated with a comma. For instance, if we write the code below and run the script, the results would be as shown in *output*.
 
 
