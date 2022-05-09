@@ -873,6 +873,7 @@ b = 5
 Using ```a``` and ```b``` we can itemise built-in mathematical operations in Python as follows:	
 
 ![Routine mathematical operations in Python](fig/routine_operations.png)
+
 ::::::::::::::::::: callout
 
 ## Remember
