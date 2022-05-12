@@ -5,6 +5,11 @@ exercises: 2
 ---
 
 
+
+[**Download Chapter pdf**](03-conditional_statements.md.pdf)
+
+[**Download Chapter notebook (ipynb)**](03-conditional_statements.ipynb)
+
 :::::::::::::::::::::::::::::::::::::: questions 
 
 - 
@@ -285,6 +290,7 @@ if value > 0:
    print('POSITIVE.')  # Indented with 3 spaces.
 
 ```
+
 ```
 File <STDIN>, line 5
     print('POSITIVE.')  # Indented with 3 spaces.

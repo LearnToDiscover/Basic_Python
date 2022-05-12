@@ -7,6 +7,11 @@ output:
     keep_md: true
 ---
 
+[**Download Chapter pdf**](02-input_output.md.pdf)
+
+[**Download Chapter notebook (ipynb)**](02-input_output.ipynb)
+
+
 ::::::::::::::::::::::::::::::::::::: questions 
 
 - What are I/O operations?
@@ -23,6 +28,9 @@ output:
 - Learning about type conversions and scope
 - Understanding mathematical and logical operations
 ::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
 
 
 <p style='text-align: justify;'> 
