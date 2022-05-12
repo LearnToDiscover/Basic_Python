@@ -24,6 +24,7 @@ output:
 - Understanding mathematical and logical operations
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+
 <p style='text-align: justify;'> 
 In programming, we process data and produce outputs. When the data is being processed, it is stored in the memory, so that it is readily available, and can therefore be subject to the processes we want to apply.
 </p>
@@ -150,8 +151,6 @@ We know <kbd>print()</kbd> is a *function* because it ends with a pair of parent
 </p>
 
 ::::::::::::::::::::::::::::::::::::: 
-
-
 
 
 
@@ -299,7 +298,7 @@ input('Please enter the name of a protein: ')
 :::::::::::::::::::
 :::::::::::::::::::::::::::::::
 
-## Variables And Types
+## Variables And Types {#varTypes}
 
 
 We use variables to store data in the memory. Each variable has 3 characteristics: *scope*, *name*, and *type*. *Scope* and *name* must be mutually unique. Starting with *name*, we will discuss each of these characteristics in more details throughout this chapter. 
@@ -1853,7 +1852,7 @@ The Boolean data type is named after the English mathematician and logician Geor
 
 ::::::::::::::::::::
 
-### **Logical Operations**
+### **Logical Operations** {#subsec:logicalOperatons}
 
 An operation may involve a comparison. The result of such operations is either ```True``` or ```False```. This is known as the *Boolean* or ```bool``` data type. In reality, however, computers record ```True``` and ```False``` as ```1``` and ```0``` respectively.
 
@@ -1961,7 +1960,7 @@ y1 is equal to y2: True
 
 :::::::::::::::::::::::::::::::::::::
 
-#### **Negation**
+#### **Negation** {#sec:logicalStatements:Negation}
 
 We can also use negation in logical operations. Negation in Python is implemented using <kbd>not</kbd>:
 
@@ -2543,3 +2542,4 @@ print('7.', (12 / a) and (a * 4) < b)
 - Logical operations provide results in Boolean (True or False)
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
+[r-markdown]: https://rmarkdown.rstudio.com/

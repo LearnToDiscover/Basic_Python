@@ -150,7 +150,7 @@
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
         <ul><li><a href="#operations">I/O Operations</a></li>
-<li><a href="#variables-and-types">Variables And Types</a></li>
+<li><a href="#varTypes">Variables And Types</a></li>
 <li><a href="#sec:operations">Operations</a></li>
 <li><a href="#exercises">Exercises</a></li>
         </ul></div><!--/div.accordion-body-->
@@ -246,7 +246,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Variables, Types, and Operations</h1>
-        <p> Last updated on 2022-05-11 | <a href="https://github.com/LearnToDiscover/Basic_Python.git/edit/main/episodes/02-input_output.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <p> Last updated on 2022-05-12 | <a href="https://github.com/LearnToDiscover/Basic_Python.git/edit/main/episodes/02-input_output.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -469,7 +469,7 @@ We know <kbd>print()</kbd> is a <em>function</em> because it ends with a pair of
   DIY ANSWER
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb12">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -549,7 +549,7 @@ Please enter your name: _</code></pre>
   DIY ANSWER
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <pre><code><span class="fu">input</span><span class="op">(</span><span class="st">'Please enter the name of a protein: '</span><span class="op">)</span></code></pre>
 </div>
@@ -557,7 +557,7 @@ Please enter your name: _</code></pre>
 </div>
 </div>
 </div>
-</section><section id="variables-and-types"><h2 class="section-heading">Variables And Types</h2>
+</section><section id="varTypes"><h2 class="section-heading">Variables And Types</h2>
 <hr class="half-width"><p>We use variables to store data in the memory. Each variable has 3 characteristics: <em>scope</em>, <em>name</em>, and <em>type</em>. <em>Scope</em> and <em>name</em> must be mutually unique. Starting with <em>name</em>, we will discuss each of these characteristics in more details throughout this chapter.</p>
 <div class="section level3">
 <h3 id="variable-names"><strong>Variable names</strong><a class="anchor" aria-label="anchor" href="#variable-names"></a></h3>
@@ -662,7 +662,7 @@ Please enter your name: _</code></pre>
   DIY ANSWER
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb28">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -729,7 +729,7 @@ Please enter your name: _</code></pre>
   DIY ANSWER
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <pre><code><span class="va">enzyme</span> <span class="op">=</span> <span class="fu">input</span><span class="op">(</span><span class="st">'Please enter the name of an enzyme: '</span><span class="op">)</span>
     
@@ -898,7 +898,7 @@ Please enter your name: _</code></pre>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb42">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1134,7 +1134,7 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'</code></pre>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb68">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1220,7 +1220,7 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'</code></pre>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution7" class="accordion-collapse collapse" aria-labelledby="headingSolution7" data-bs-parent="#accordionSolution7">
+<div id="collapseSolution7" class="accordion-collapse collapse" data-bs-parent="#accordionSolution7" aria-labelledby="headingSolution7">
 <div class="accordion-body">
 <pre><code><span class="va">enzyme</span> <span class="op">=</span> <span class="fu">input</span><span class="op">(</span><span class="st">'Please enter the name of an enzyme: '</span><span class="op">)</span>
 
@@ -1411,7 +1411,7 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'</code></pre>
   Q1
   </h4>
 </button>
-<div id="collapseSolution8" class="accordion-collapse collapse" aria-labelledby="headingSolution8" data-bs-parent="#accordionSolution8">
+<div id="collapseSolution8" class="accordion-collapse collapse" data-bs-parent="#accordionSolution8" aria-labelledby="headingSolution8">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb88">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1483,7 +1483,7 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'</code></pre>
   Q2-I
   </h4>
 </button>
-<div id="collapseSolution9" class="accordion-collapse collapse" aria-labelledby="headingSolution9" data-bs-parent="#accordionSolution9">
+<div id="collapseSolution9" class="accordion-collapse collapse" data-bs-parent="#accordionSolution9" aria-labelledby="headingSolution9">
 <div class="accordion-body">
 <p>In the case of <span class="math inline">\(35 - 3.0\)</span> vs <span class="math inline">\(35 - 3\)</span>, the former includes a floating point number. Operations involving multiple numeric types always produce the results as an instance of the type that covers all of the operands – i.e. <code>float</code> covers <code>int</code>, but not vice-versa.</p>
 </div>
@@ -1497,7 +1497,7 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'</code></pre>
   Q2-II
   </h4>
 </button>
-<div id="collapseSolution10" class="accordion-collapse collapse" aria-labelledby="headingSolution10" data-bs-parent="#accordionSolution10">
+<div id="collapseSolution10" class="accordion-collapse collapse" data-bs-parent="#accordionSolution10" aria-labelledby="headingSolution10">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb98">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1690,7 +1690,7 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'</code></pre>
   Q1
   </h4>
 </button>
-<div id="collapseSolution11" class="accordion-collapse collapse" aria-labelledby="headingSolution11" data-bs-parent="#accordionSolution11">
+<div id="collapseSolution11" class="accordion-collapse collapse" data-bs-parent="#accordionSolution11" aria-labelledby="headingSolution11">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb118">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1719,7 +1719,7 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'</code></pre>
   Q2
   </h4>
 </button>
-<div id="collapseSolution12" class="accordion-collapse collapse" aria-labelledby="headingSolution12" data-bs-parent="#accordionSolution12">
+<div id="collapseSolution12" class="accordion-collapse collapse" data-bs-parent="#accordionSolution12" aria-labelledby="headingSolution12">
 <div class="accordion-body">
 <pre><code>	pi /= (3 % 2) - 1
 </code></pre>
@@ -1804,7 +1804,7 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'</code></pre>
   Q1
   </h4>
 </button>
-<div id="collapseSolution13" class="accordion-collapse collapse" aria-labelledby="headingSolution13" data-bs-parent="#accordionSolution13">
+<div id="collapseSolution13" class="accordion-collapse collapse" data-bs-parent="#accordionSolution13" aria-labelledby="headingSolution13">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb126">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1864,7 +1864,7 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'</code></pre>
   Q2
   </h4>
 </button>
-<div id="collapseSolution14" class="accordion-collapse collapse" aria-labelledby="headingSolution14" data-bs-parent="#accordionSolution14">
+<div id="collapseSolution14" class="accordion-collapse collapse" data-bs-parent="#accordionSolution14" aria-labelledby="headingSolution14">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb134">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1912,7 +1912,7 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'</code></pre>
   Q3
   </h4>
 </button>
-<div id="collapseSolution15" class="accordion-collapse collapse" aria-labelledby="headingSolution15" data-bs-parent="#accordionSolution15">
+<div id="collapseSolution15" class="accordion-collapse collapse" data-bs-parent="#accordionSolution15" aria-labelledby="headingSolution15">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb140">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2025,7 +2025,7 @@ DoB: 01/01/1990</code></pre>
   Q1
   </h4>
 </button>
-<div id="collapseSolution16" class="accordion-collapse collapse" aria-labelledby="headingSolution16" data-bs-parent="#accordionSolution16">
+<div id="collapseSolution16" class="accordion-collapse collapse" data-bs-parent="#accordionSolution16" aria-labelledby="headingSolution16">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb151">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2052,7 +2052,7 @@ DoB: 01/01/1990</code></pre>
   Q2
   </h4>
 </button>
-<div id="collapseSolution17" class="accordion-collapse collapse" aria-labelledby="headingSolution17" data-bs-parent="#accordionSolution17">
+<div id="collapseSolution17" class="accordion-collapse collapse" data-bs-parent="#accordionSolution17" aria-labelledby="headingSolution17">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb153">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2077,7 +2077,7 @@ DoB: 01/01/1990</code></pre>
   Q3
   </h4>
 </button>
-<div id="collapseSolution18" class="accordion-collapse collapse" aria-labelledby="headingSolution18" data-bs-parent="#accordionSolution18">
+<div id="collapseSolution18" class="accordion-collapse collapse" data-bs-parent="#accordionSolution18" aria-labelledby="headingSolution18">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb155">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2095,7 +2095,7 @@ DoB: 01/01/1990</code></pre>
   Q4
   </h4>
 </button>
-<div id="collapseSolution19" class="accordion-collapse collapse" aria-labelledby="headingSolution19" data-bs-parent="#accordionSolution19">
+<div id="collapseSolution19" class="accordion-collapse collapse" data-bs-parent="#accordionSolution19" aria-labelledby="headingSolution19">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb156">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2121,7 +2121,7 @@ DoB: 01/01/1990</code></pre>
   Q5
   </h4>
 </button>
-<div id="collapseSolution20" class="accordion-collapse collapse" aria-labelledby="headingSolution20" data-bs-parent="#accordionSolution20">
+<div id="collapseSolution20" class="accordion-collapse collapse" data-bs-parent="#accordionSolution20" aria-labelledby="headingSolution20">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb158">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2166,7 +2166,7 @@ DoB: 01/01/1990</code></pre>
   Q6
   </h4>
 </button>
-<div id="collapseSolution21" class="accordion-collapse collapse" aria-labelledby="headingSolution21" data-bs-parent="#accordionSolution21">
+<div id="collapseSolution21" class="accordion-collapse collapse" data-bs-parent="#accordionSolution21" aria-labelledby="headingSolution21">
 <div class="accordion-body">
 <p>No, <code>polyq_peptide_length</code> is an instance of type <code>float</code>. This is because we used the normal division (<code>/</code>) and not floor division (<code>//</code>}) to calculate its value. The result of normal division is always presented as a floating point number.</p>
 </div>
@@ -2180,7 +2180,7 @@ DoB: 01/01/1990</code></pre>
   Q7
   </h4>
 </button>
-<div id="collapseSolution22" class="accordion-collapse collapse" aria-labelledby="headingSolution22" data-bs-parent="#accordionSolution22">
+<div id="collapseSolution22" class="accordion-collapse collapse" data-bs-parent="#accordionSolution22" aria-labelledby="headingSolution22">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb164">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2245,7 +2245,7 @@ DoB: 01/01/1990</code></pre>
 </div>
 </div>
 <div class="section level3">
-<h3 id="logical-operations"><strong>Logical Operations</strong><a class="anchor" aria-label="anchor" href="#logical-operations"></a></h3>
+<h3 id="subsec:logicalOperatons"><strong>Logical Operations</strong><a class="anchor" aria-label="anchor" href="#subsec:logicalOperatons"></a></h3>
 <p>An operation may involve a comparison. The result of such operations is either <code>True</code> or <code>False</code>. This is known as the <em>Boolean</em> or <code>bool</code> data type. In reality, however, computers record <code>True</code> and <code>False</code> as <code>1</code> and <code>0</code> respectively.</p>
 <p>Operations with Boolean results are referred to as <em>logical operations</em>. Testing the results of such operations is known as <em>truth value testing</em>.</p>
 <p>Given the two variables <code>a</code> and <code>b</code> as follows:</p>
@@ -2281,7 +2281,7 @@ y1 is equal to y2: [True/False]</code></pre>
   Q1
   </h4>
 </button>
-<div id="collapseSolution23" class="accordion-collapse collapse" aria-labelledby="headingSolution23" data-bs-parent="#accordionSolution23">
+<div id="collapseSolution23" class="accordion-collapse collapse" data-bs-parent="#accordionSolution23" aria-labelledby="headingSolution23">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb176">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2320,7 +2320,7 @@ y1 is equal to y2: [True/False]</code></pre>
   Q2
   </h4>
 </button>
-<div id="collapseSolution24" class="accordion-collapse collapse" aria-labelledby="headingSolution24" data-bs-parent="#accordionSolution24">
+<div id="collapseSolution24" class="accordion-collapse collapse" data-bs-parent="#accordionSolution24" aria-labelledby="headingSolution24">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb180">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2350,7 +2350,7 @@ y1 is equal to y2: [True/False]</code></pre>
 </div>
 </div>
 <div class="section level4">
-<h4 id="negation"><strong>Negation</strong><a class="anchor" aria-label="anchor" href="#negation"></a></h4>
+<h4 id="sec:logicalStatements:Negation"><strong>Negation</strong><a class="anchor" aria-label="anchor" href="#sec:logicalStatements:Negation"></a></h4>
 <p>We can also use negation in logical operations. Negation in Python is implemented using <kbd>not</kbd>:</p>
 <figure><img src="fig/Negation.png" alt="" class="figure mx-auto d-block"><figcaption>Negations in Python.</figcaption></figure><div id="challenge13" class="callout challenge">
 <div class="callout-square">
@@ -2372,7 +2372,7 @@ y1 is equal to y2: [True/False]</code></pre>
   Q1
   </h4>
 </button>
-<div id="collapseSolution25" class="accordion-collapse collapse" aria-labelledby="headingSolution25" data-bs-parent="#accordionSolution25">
+<div id="collapseSolution25" class="accordion-collapse collapse" data-bs-parent="#accordionSolution25" aria-labelledby="headingSolution25">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb184">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2397,7 +2397,7 @@ y1 is equal to y2: [True/False]</code></pre>
   Q2
   </h4>
 </button>
-<div id="collapseSolution26" class="accordion-collapse collapse" aria-labelledby="headingSolution26" data-bs-parent="#accordionSolution26">
+<div id="collapseSolution26" class="accordion-collapse collapse" data-bs-parent="#accordionSolution26" aria-labelledby="headingSolution26">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb186">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2464,7 +2464,7 @@ y1 is equal to y2: [True/False]</code></pre>
   Q1
   </h4>
 </button>
-<div id="collapseSolution27" class="accordion-collapse collapse" aria-labelledby="headingSolution27" data-bs-parent="#accordionSolution27">
+<div id="collapseSolution27" class="accordion-collapse collapse" data-bs-parent="#accordionSolution27" aria-labelledby="headingSolution27">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb191">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2487,7 +2487,7 @@ y1 is equal to y2: [True/False]</code></pre>
   Q2
   </h4>
 </button>
-<div id="collapseSolution28" class="accordion-collapse collapse" aria-labelledby="headingSolution28" data-bs-parent="#accordionSolution28">
+<div id="collapseSolution28" class="accordion-collapse collapse" data-bs-parent="#accordionSolution28" aria-labelledby="headingSolution28">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb193">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2510,7 +2510,7 @@ y1 is equal to y2: [True/False]</code></pre>
   Q3
   </h4>
 </button>
-<div id="collapseSolution29" class="accordion-collapse collapse" aria-labelledby="headingSolution29" data-bs-parent="#accordionSolution29">
+<div id="collapseSolution29" class="accordion-collapse collapse" data-bs-parent="#accordionSolution29" aria-labelledby="headingSolution29">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb195">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2533,7 +2533,7 @@ y1 is equal to y2: [True/False]</code></pre>
   Q4
   </h4>
 </button>
-<div id="collapseSolution30" class="accordion-collapse collapse" aria-labelledby="headingSolution30" data-bs-parent="#accordionSolution30">
+<div id="collapseSolution30" class="accordion-collapse collapse" data-bs-parent="#accordionSolution30" aria-labelledby="headingSolution30">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb197">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2556,7 +2556,7 @@ y1 is equal to y2: [True/False]</code></pre>
   Q5
   </h4>
 </button>
-<div id="collapseSolution31" class="accordion-collapse collapse" aria-labelledby="headingSolution31" data-bs-parent="#accordionSolution31">
+<div id="collapseSolution31" class="accordion-collapse collapse" data-bs-parent="#accordionSolution31" aria-labelledby="headingSolution31">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb199">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2579,7 +2579,7 @@ y1 is equal to y2: [True/False]</code></pre>
   Q6
   </h4>
 </button>
-<div id="collapseSolution32" class="accordion-collapse collapse" aria-labelledby="headingSolution32" data-bs-parent="#accordionSolution32">
+<div id="collapseSolution32" class="accordion-collapse collapse" data-bs-parent="#accordionSolution32" aria-labelledby="headingSolution32">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb201">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2602,7 +2602,7 @@ y1 is equal to y2: [True/False]</code></pre>
   Q7
   </h4>
 </button>
-<div id="collapseSolution33" class="accordion-collapse collapse" aria-labelledby="headingSolution33" data-bs-parent="#accordionSolution33">
+<div id="collapseSolution33" class="accordion-collapse collapse" data-bs-parent="#accordionSolution33" aria-labelledby="headingSolution33">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb203">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2625,7 +2625,7 @@ y1 is equal to y2: [True/False]</code></pre>
   Q8
   </h4>
 </button>
-<div id="collapseSolution34" class="accordion-collapse collapse" aria-labelledby="headingSolution34" data-bs-parent="#accordionSolution34">
+<div id="collapseSolution34" class="accordion-collapse collapse" data-bs-parent="#accordionSolution34" aria-labelledby="headingSolution34">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb205">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2648,7 +2648,7 @@ y1 is equal to y2: [True/False]</code></pre>
   Q9
   </h4>
 </button>
-<div id="collapseSolution35" class="accordion-collapse collapse" aria-labelledby="headingSolution35" data-bs-parent="#accordionSolution35">
+<div id="collapseSolution35" class="accordion-collapse collapse" data-bs-parent="#accordionSolution35" aria-labelledby="headingSolution35">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb207">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2671,7 +2671,7 @@ y1 is equal to y2: [True/False]</code></pre>
   Q10
   </h4>
 </button>
-<div id="collapseSolution36" class="accordion-collapse collapse" aria-labelledby="headingSolution36" data-bs-parent="#accordionSolution36">
+<div id="collapseSolution36" class="accordion-collapse collapse" data-bs-parent="#accordionSolution36" aria-labelledby="headingSolution36">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb209">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2915,7 +2915,7 @@ The longer the statement, the more difficult it would be to understand it proper
   Q1
   </h4>
 </button>
-<div id="collapseSolution37" class="accordion-collapse collapse" aria-labelledby="headingSolution37" data-bs-parent="#accordionSolution37">
+<div id="collapseSolution37" class="accordion-collapse collapse" data-bs-parent="#accordionSolution37" aria-labelledby="headingSolution37">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb239">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2938,7 +2938,7 @@ The longer the statement, the more difficult it would be to understand it proper
   Q2
   </h4>
 </button>
-<div id="collapseSolution38" class="accordion-collapse collapse" aria-labelledby="headingSolution38" data-bs-parent="#accordionSolution38">
+<div id="collapseSolution38" class="accordion-collapse collapse" data-bs-parent="#accordionSolution38" aria-labelledby="headingSolution38">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb241">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2961,7 +2961,7 @@ The longer the statement, the more difficult it would be to understand it proper
   Q3
   </h4>
 </button>
-<div id="collapseSolution39" class="accordion-collapse collapse" aria-labelledby="headingSolution39" data-bs-parent="#accordionSolution39">
+<div id="collapseSolution39" class="accordion-collapse collapse" data-bs-parent="#accordionSolution39" aria-labelledby="headingSolution39">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb243">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2984,7 +2984,7 @@ The longer the statement, the more difficult it would be to understand it proper
   Q4
   </h4>
 </button>
-<div id="collapseSolution40" class="accordion-collapse collapse" aria-labelledby="headingSolution40" data-bs-parent="#accordionSolution40">
+<div id="collapseSolution40" class="accordion-collapse collapse" data-bs-parent="#accordionSolution40" aria-labelledby="headingSolution40">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb245">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -3007,7 +3007,7 @@ The longer the statement, the more difficult it would be to understand it proper
   Q5
   </h4>
 </button>
-<div id="collapseSolution41" class="accordion-collapse collapse" aria-labelledby="headingSolution41" data-bs-parent="#accordionSolution41">
+<div id="collapseSolution41" class="accordion-collapse collapse" data-bs-parent="#accordionSolution41" aria-labelledby="headingSolution41">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb247">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -3030,7 +3030,7 @@ The longer the statement, the more difficult it would be to understand it proper
   Q6
   </h4>
 </button>
-<div id="collapseSolution42" class="accordion-collapse collapse" aria-labelledby="headingSolution42" data-bs-parent="#accordionSolution42">
+<div id="collapseSolution42" class="accordion-collapse collapse" data-bs-parent="#accordionSolution42" aria-labelledby="headingSolution42">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb249">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -3053,7 +3053,7 @@ The longer the statement, the more difficult it would be to understand it proper
   Q7
   </h4>
 </button>
-<div id="collapseSolution43" class="accordion-collapse collapse" aria-labelledby="headingSolution43" data-bs-parent="#accordionSolution43">
+<div id="collapseSolution43" class="accordion-collapse collapse" data-bs-parent="#accordionSolution43" aria-labelledby="headingSolution43">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb251">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -3141,7 +3141,7 @@ any links that you are not going to use.
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
         <p>Built with <a href="https://github.com/carpentries/sandpaper" class="external-link">sandpaper (0.5.1)</a>,
-      <a href="https://github.com/carpentries/pegboard" class="external-link">pegboard (0.2.5)</a>,
+      <a href="https://github.com/carpentries/pegboard" class="external-link">pegboard (0.2.6)</a>,
       and <a href="https://github.com/carpentries/varnish" class="external-link">varnish (0.1.4)</a>.</p>
 			</div>
 		</footer></div> <!-- / div.container -->
@@ -3162,9 +3162,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://learntodiscover.github.io/Basic_Python/02-input_output.html",
   "identifier": "https://learntodiscover.github.io/Basic_Python/02-input_output.html",
-  "dateCreated": "2022-05-11",
-  "dateModified": "2022-05-11",
-  "datePublished": "2022-05-11"
+  "dateCreated": "2022-05-12",
+  "dateModified": "2022-05-12",
+  "datePublished": "2022-05-12"
 }
 
   </script><script>
