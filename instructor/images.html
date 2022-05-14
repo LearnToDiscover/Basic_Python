@@ -307,7 +307,7 @@
 <figure><img src="../fig/input_example.png" id="fig:inputExample" alt="" class="figure mx-auto d-block"><figcaption>Run from terminal</figcaption></figure><hr>
 <h3 id="02-input_output-figure-6">Figure 6</h3>
 <p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<figure><img src="../fig/python_built-in_types.png" id="tb:types:nativeTypes" alt="" class="figure mx-auto d-block"><figcaption>A comprehensive (but non-exhaustive) reference of built-in (native) types in Python 3.<br><sup>*</sup> Not discussed in this course — included for reference only. <br><sup>$</sup><code>dict</code> is not an iterable by default, however, it is possible to iterate through its keys. <br><strong>Mutability</strong> is an important <a href="https://en.wikipedia.org/wiki/Immutable_object" class="external-link">concept in programming</a>. For the purpose of this tutorial, a mutable object is an object whose value(s) may be altered. This will become clearer once we study <code>list</code> and <code>tuple</code>. Find out more about mutability in Python from the <a href="https://docs.python.org/3.6/reference/datamodel.html" class="external-link">documentations}</a>. <br><strong>Complex numbers</strong> refer to a <a href="http://thinkzone.wlonk.com/Numbers/NumberSets.htm" class="external-link">set of numbers</a> that have a real part, and an imaginary part; where the imaginary part is defined as <span class="math inline">\(\sqrt{-1}\)</span>. These numbers are very useful in the study of oscillatory behaviours and flow (e.g. heat, fluid, electricity). To learn more about complex numbers, watch this <a href="https://www.khanacademy.org/math/algebra2/introduction-to-complex-numbers-algebra-2/the-complex-numbers-algebra-2/v/complex-number-intro" class="external-link">Khan Academy video tutorial</a>.</figcaption></figure><hr>
+<figure><img src="../fig/python_built-in_types.png" id="tb:types:nativeTypes" alt="" class="figure mx-auto d-block"><figcaption>A comprehensive (but non-exhaustive) reference of built-in (native) types in Python 3.<br><sup>*</sup> Not discussed in this course — included for reference only. <br><sup>$</sup><code>dict</code> is not an iterable by default, however, it is possible to iterate through its keys. <br><br><strong>Mutability</strong> is an important <a href="https://en.wikipedia.org/wiki/Immutable_object" class="external-link">concept in programming</a>. For the purpose of this tutorial, a mutable object is an object whose value(s) may be altered. This will become clearer once we study <code>list</code> and <code>tuple</code>. Find out more about mutability in Python from the <a href="https://docs.python.org/3.6/reference/datamodel.html" class="external-link">documentations}</a>. <br><br><strong>Complex numbers</strong> refer to a <a href="http://thinkzone.wlonk.com/Numbers/NumberSets.htm" class="external-link">set of numbers</a> that have a real part, and an imaginary part; where the imaginary part is defined as <span class="math inline">\(\sqrt{-1}\)</span>. These numbers are very useful in the study of oscillatory behaviours and flow (e.g. heat, fluid, electricity). To learn more about complex numbers, watch this <a href="https://www.khanacademy.org/math/algebra2/introduction-to-complex-numbers-algebra-2/the-complex-numbers-algebra-2/v/complex-number-intro" class="external-link">Khan Academy video tutorial</a>.</figcaption></figure><hr>
 <h3 id="02-input_output-figure-7">Figure 7</h3>
 <p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
 <figure><img src="../fig/input_type_example.png" id="fig:inputTypeExample" alt="" class="figure mx-auto d-block"><figcaption>Type evaluation against four different responses to the <strong><em>input()</em></strong> function. An <strong>input()</strong> function <em>always</em> stores the response as a <code>str</code> value, no matter what the user enters.</figcaption></figure><hr>
@@ -315,8 +315,39 @@
 <p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
 <figure><img src="../fig/input_conversion_example.png" id="fig:inputConversionExample" alt="" class="figure mx-auto d-block"><figcaption>Input conversion</figcaption></figure><hr>
 <h3 id="02-input_output-figure-9">Figure 9</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<figure><img src="../fig/variable_scopes.png" id="fig:opts:scopes" alt="" class="figure mx-auto d-block"><figcaption>Variable scopes in Python with respect to scripts and functions.</figcaption></figure><hr>
+<p aria-hidden="true">Image 1 of 1: ‘Variable scopes in Python with respect to scripts and functions.’</p>
+<figure id="variable-scopes"><h3><strong>Variable scopes</strong></h3>
+<a href="https://docs.python.org/3.6/reference/executionmodel.html#resolution-of-names" class="external-link"><strong>Resolution of names</strong></a>
+<p style="text-align: justify;">
+When defining a variable, we should always consider where in our programme we intent to use it. The more localised our variables, the better. This is because local variables are easier to distinguish, and thus reduce the chance of making mistakes — e.g. unintentionally redefine or alter the value of an existing variable.
+</p>
+<p style="text-align: justify;">
+To that end, the scope of a variable defines the ability to reference a variable from different <em>points</em> in our programmes. The concept of local variables becomes clearer once we explore functions in programming in chapter <a href="06-functions.html">Functions</a>.
+</p>
+<p style="text-align: justify;">
+As displayed in Figure <a href="#fig:opts:scopes">Variable scopes</a>, the point <em>at</em> or <em>from</em> which a variable can be referenced depends on the location where the variable is defined.
+</p>
+<p>In essence, there are three general rules to remember in relation variable scopes in Python:</p>
+<p style="text-align: justify;">
+I. A variable that is defined in the outer scope, can be <em>accessed</em> or <em>called</em> in the inner scopes, but it cannot be <em>altered</em> implicitly. Not that such variables may still be altered using special techniques (not discussed).
+</p>
+<p style="text-align: justify;">
+</p>
+<ol start="2" style="list-style-type: upper-roman">
+<li>A variable that is defined in the innermost scopes (local), can only be <em>accessed</em>, <em>called</em>, or <em>altered</em> within the boundaries of the scope it is defined in.</li>
+</ol>
+<p style="text-align: justify;">
+</p>
+<ol start="3" style="list-style-type: upper-roman">
+<li>The inner scopes <em>from</em> which a variable is referenced must themselves have be contained within the defining scope — e.g. in <code>FuncB</code> of Figure <a href="#fig:opts:scopes">Variable scopes</a>, we can reference <code>a</code>, <code>b</code>, and <code>x</code>; but not <code>f1</code>. This is because the scope of <code>f1</code> is <code>Script</code> <kbd>→</kbd> <code>FuncA</code>, so it can only be referenced from <code>Script</code> <kbd>→</kbd> <code>FuncA</code> <kbd>→ …</kbd>, but not `<code>Script</code><kbd>→ …</kbd> or <code>Script</code> <kbd>→</kbd> <code>FuncB</code> <kbd>→ …</kbd>.</li>
+</ol>
+<img src="../fig/variable_scopes.png" title="fig:" id="fig:opts:scopes" alt="Variable scopes in Python with respect to scripts and functions." class="figure mx-auto d-block"><p style="text-align: justify;">
+Python is an interpreted language. This means that the Python interpreter goes through the codes that we write line by line, interpreting it to machine language. It is only then that the commands are processed and executed by the computer. On that account, a variable (or a function) can be referenced only <em>after</em> its initial definition. That is why, for instance, in <code>Script (part 2)</code> of Figure <a href="#fig:opts:scopes">Variable scopes</a>, we can reference every variable and function except for <code>FuncC</code>, which is declared further down the code hierarchy.
+</p>
+<p style="text-align: justify;">
+Although scope and hierarchy appear at first glance as theoretical concepts in programming, their implications are entirely practical. The definition of these principles tend to vary from one programming language to another. As such, it is essential to understand these principles and their implications in relation to any programming language we are trying to learn.
+</p>
+</figure><hr>
 <h3 id="02-input_output-figure-10">Figure 10</h3>
 <figure><img src="../fig/commandprompt_1.png" class="figure mx-auto d-block"><img src="../fig/commandprompt_2.png" class="figure mx-auto d-block"><img src="../fig/commandprompt_3.png" class="figure mx-auto d-block"></figure><hr>
 <h3 id="02-input_output-figure-11">Figure 11</h3>
@@ -339,7 +370,25 @@
 <hr class="half-width">
 <h3 id="03-conditional_statements-figure-1">Figure 1</h3>
 <p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<figure><img src="../fig/conditional_flowchart.png" alt="" class="figure mx-auto d-block"><figcaption>Flowchart</figcaption></figure><hr></section><section id="04-arrays"><h2 class="section-heading"><a href="04-arrays.html">Arrays</a></h2>
+<figure><img src="../fig/conditional_flowchart.png" alt="" class="figure mx-auto d-block"><figcaption>Flowchart</figcaption></figure><hr>
+<h3 id="03-conditional_statements-figure-2">Figure 2</h3>
+<figure><p style="text-align: justify;">
+In previous chapter, <a href="02-input_output.html#diy:mathOpts:Huntington">Do it Yourself</a>, we explored the implication of <code>CAG</code> repeats in Huntington’s disease. We also created a polynucleotide chain containing 36 repetition of the <code>CAG</code> codons.
+</p>
+<p style="text-align: justify;">
+Write a conditional statement that tests the length of a polyQ tract to determine the <em>classification</em> and the <em>disease status</em> based on the following Table:
+</p>
+<img src="../fig/diy_CAG.png" class="figure mx-auto d-block"><p style="text-align: justify;">
+Using the technique you used in <a href="02-input_output.html#diy:mathOpts:Huntington">Do it Yourself</a>, create 5 polyQ tracts containing 26, 15, 39, 32, 26, and 54 codons. Use these polynucleotide chains to test your conditional statement.
+</p>
+<p>Display the result for each chain in the following format:</p>
+<pre><code>PolyQ chain with XXX number of CAG codons: 
+Status: XXX
+Classification: XXX</code></pre>
+<p style="text-align: justify;">
+<strong>Hint:</strong> The length of a polyQ tract represents the number of nucleotides, not the number of <code>CAG</code> codons. See task 4 of <a href="02-input_output.html#diy:mathOpts:Huntington">Do it Yourself</a> for additional information.
+</p>
+</figure><hr></section><section id="04-arrays"><h2 class="section-heading"><a href="04-arrays.html">Arrays</a></h2>
 <hr class="half-width"></section><section id="05-iterations"><h2 class="section-heading"><a href="05-iterations.html">Iterations</a></h2>
 <hr class="half-width"></section><section id="06-functions"><h2 class="section-heading"><a href="06-functions.html">Functions</a></h2>
 <hr class="half-width"></section><section id="07-strings"><h2 class="section-heading"><a href="07-strings.html">Strings</a></h2>
@@ -385,9 +434,9 @@
   "creativeWorkStatus": "active",
   "url": "https://learntodiscover.github.io/Basic_Python/instructor/images.html",
   "identifier": "https://learntodiscover.github.io/Basic_Python/instructor/images.html",
-  "dateCreated": "2022-05-12",
-  "dateModified": "2022-05-12",
-  "datePublished": "2022-05-12"
+  "dateCreated": "2022-05-14",
+  "dateModified": "2022-05-14",
+  "datePublished": "2022-05-14"
 }
 
   </script><script>
