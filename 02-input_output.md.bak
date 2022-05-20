@@ -1176,7 +1176,7 @@ Values of type ```int``` have been chosen in our examples to facilitate the unde
 
 ::::::::::::::::::::::::::::::::::::: challenge 
 
-## Do it Yourself
+## Do it Yourself {#diy:mathsI}
 
 1. Calculate the following and store the results in appropriately named variables:
 
@@ -1432,7 +1432,7 @@ print(total_residues)
 
 ::::::::::::::::::::::::::::::::::::: challenge 
 
-## Do it Yourself 
+## Do it Yourself {#diy:mathsII}
 
 1. Given:
 	* Circumference: $C = 18.84956$
@@ -1707,7 +1707,7 @@ a^2 + 2ab + b^2 = 49
 
 :::::::::::::::::::::::::::::::::::::
 
-#### **Non-numeric values**
+#### **Non-numeric values** {#subsubsec:mathematicalOperations:nonNumerics}
 <p style='text-align: justify;'>
 It sometimes makes sense to apply *some* mathematical operations to non-numeric variables too.
 </p>
