@@ -24,6 +24,12 @@ exercises: 2
 - Understanding mutability and immutability.
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+<br>
+<p align = "center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PKECJlZOXlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+<br>
+
 :::::::::::::::::: prereq
 - [Variables and Types](02-input_output.Rmd#varTypes)
 - [Logical Operations](02-input_output.Rmd#subsec:logicalOperatons)
@@ -1925,7 +1931,7 @@ print("Result:", table_rev)
 ```
 
 ```{.output}
-Result: <list_reverseiterator object at 0x7faa1ce94730>
+Result: <list_reverseiterator object at 0x7f19ce31cb80>
 ```
 
 ```python
