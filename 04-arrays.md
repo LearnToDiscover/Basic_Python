@@ -8,6 +8,8 @@ exercises: 2
 
 [**Download Chapter notebook (ipynb)**](04-arrays.ipynb)
 
+[<span style="color: rgb(255, 0, 0);">**Mandatory Lesson Feedback Survey**</span>](https://docs.google.com/forms/d/e/1FAIpQLSdr0capF7jloJhPH3Pki1B3LZoKOG16poOpuVJ7SL2LkwLHQA/viewform?pli=1)
+
 :::::::::::::::::::::::::::::::::::::: questions 
 
 - What are different types of arrays?
@@ -1931,7 +1933,7 @@ print("Result:", table_rev)
 ```
 
 ```{.output}
-Result: <list_reverseiterator object at 0x7fe9ef770730>
+Result: <list_reverseiterator object at 0x7fa13f52c730>
 ```
 
 ```python
