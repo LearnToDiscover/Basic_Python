@@ -11,6 +11,7 @@ output:
 
 [**Download Chapter notebook (ipynb)**](02-input_output.ipynb)
 
+[<span style="color: rgb(255, 0, 0);">**Mandatory Lesson Feedback Survey**</span>](https://docs.google.com/forms/d/e/1FAIpQLSdr0capF7jloJhPH3Pki1B3LZoKOG16poOpuVJ7SL2LkwLHQA/viewform?pli=1)
 
 ::::::::::::::::::::::::::::::::::::: questions 
 
@@ -101,7 +102,7 @@ In this section, we learn about two fundamental methods of I/O operations in Pyt
 
 
 :::::::::::::::::::::::::::::::::::::::::::::::: discussion	
-### Producing an output
+### Producing an output {#sub:ProducingAnOutput}
 [**Print**](https://docs.python.org/3/library/functions.html\#print)
 
 <p style='text-align: justify;'>
@@ -354,7 +355,7 @@ input('Please enter the name of a protein: ')
 We use variables to store data in the memory. Each variable has 3 characteristics: *scope*, *name*, and *type*. *Scope* and *name* must be mutually unique. Starting with *name*, we will discuss each of these characteristics in more details throughout this chapter. 
 </p>
 
-### **Variable names**
+### **Variable names** {#subsec:variableNames}
 [**PEP--8 Naming Conventions**](https://www.python.org/dev/peps/pep-0008/\#naming-conventions)
 
 <p style='text-align: justify;'>
