@@ -594,7 +594,7 @@ def variance(arr):
     result = numerator / denominator
 		    
     return result
-```` 
+```
 	
 Now we have two functions, which we can use to calculate the *variance* or the *mean* for any array of numbers.
 	
