@@ -86,7 +86,7 @@ print(table)
 ```
 
 
-```{python }
+```{python}
 
 print(type(table))
 
@@ -404,7 +404,7 @@ Find and display the index of these values from the ```list``` of Fibonacci numb
 	
 ## DIY ANSWER
 
-```{python}
+```{python, results='hold'}
 print(fibonacci.index(1))
 		
 print(fibonacci.index(5))
@@ -518,7 +518,7 @@ print(table)
 It is also possible to perform *item assignment* over a *slice* containing any number of values. Note that when modifying a slice, the replacement values must be the same length as the slice we are trying to replace:
 </p>
 
-```{python} 
+```{python, results='hold'} 
 print('Before:', table)
 	
 replacement = [-38, 0]
@@ -597,7 +597,7 @@ As established above, we can also delete a member and retain its value. Of cours
 Whilst that is a valid approach, Python's ```list``` provide us with <kbd>.pop()</kbd> to simplify the process even further. The method takes one input argument for the index of the member to be removed. It removes the member from the ```list``` and returns its value, so that we can retain it in a variable:
 </p>
 
-```{python}
+```{python, results='hold'}
 removed_value = table.pop(2)
 	
 print('Removed value:', removed_value)
@@ -650,7 +650,7 @@ outlier_index = strand.index('M')
 	
 ## Q2
 
-```{python}
+```{python, results='hold'}
 outlier_value = strand.pop(outlier_index)
 		
 print('Removed from the strand:', outlier_value)
@@ -683,7 +683,7 @@ With that in mind, we can divide operations performed using *methods* into two g
 
 1. Operations that return a result *without* changing the original array:
 	
-```{python}
+```{python, results='hold'}
 table = [1, 2, 3, 4]
 		
 index = table.index(3)
@@ -706,7 +706,7 @@ print(table)
 	
 If we attempt to store the output of an operation that does not a return result inside a variable, the variable will be created, but its value will be set to ```None```:
 
-```{python}
+```{python, results='hold'}
 result = table.append(6)
 		
 print(result)
@@ -766,7 +766,7 @@ print(ind)
 A ```list``` is a collection of members that are independent of each other. Each member has its own [type](02-input_output.Rmd#varTypes), and is therefore subject to the properties and limitation of that type:
 </p>
 
-```{python}
+```{python, results='hold'}
 table = [1, 2.1, 'abc']
 	
 print(type(table[0]))
@@ -777,7 +777,7 @@ print(type(table[2]))
 For instance, mathematical operations may be considered a feature of all numeric types demonstrated in [Table](02-input_output.Rmd#fig:nativeTypes). However, unless in specific circumstance described in subsection [Non-numeric values](02-input_output.Rmd#subsubsec:mathematicalOperations:nonNumerics), such operations do not apply to instance of type ```str```.
 </p>
 
-```{python}
+```{python, results='hold'}
 table = [1, 2.1, 'abc']
 	
 table[0] += 1
@@ -830,7 +830,7 @@ print(expr)
 
 When testing against ```str values``` --- *i.e.* text; don't forget that in programming, operations involving texts are *always* case-sensitive.	
 
-```{python}
+```{python, results='hold'}
 items = [1, 2.4, 'John', 5, 4]
 		
 john_capital = 'John'
@@ -854,7 +854,7 @@ print(4.0 in items)
 
 Similar to other [logical expression](02-input_output.Rmd#subsec:logicalOperatons), membership tests may be incorporated into conditional statements:
 
-```{python}
+```{python, results='hold'}
 if 'John' in items:
     print('Hello John')
 else:
@@ -1422,7 +1422,7 @@ print("Reversed:", table)
 
 	
 2. Through <kbd>reversed()</kbd>, which is a build-in generator function.
-```{python}
+```{python, results='hold'}
 table = [1, 2, 2, 2, 15, 16]
 table_rev = reversed(table)
 		
@@ -2110,7 +2110,7 @@ Determine the adjacency matrix and implement it as a two-dimensional array in Py
 
 ### Q1
 
-```{python}
+```{python, results='hold'}
 table = [[1, 2, 3], ['a', 'b'], [1.5, 'b', 4], [2]]
 
 table_length = len(table)
@@ -2127,7 +2127,7 @@ print(reason)
 
 ### Q2
 
-```{python}
+```{python, results='hold'}
 human_pka_gamma = (
   'MAAPAAATAMGNAPAKKDTEQEESVNEFLAKARGDFLYRWGNPAQNTASSDQFERLRTLGMGSFGRVML'
   'VRHQETGGHYAMKILNKQKVVKMKQVEHILNEKRILQAIDFPFLVKLQFSFKDNSYLYLVMEYVPGGEM'

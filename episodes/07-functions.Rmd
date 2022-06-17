@@ -29,7 +29,7 @@ exercises: 2
 
 <br>
 <p align = "center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kBlxg1lV5NQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hcvGRK8FvQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 <br>
 <p align = "center">
@@ -114,7 +114,7 @@ Once you start creating functions for different purposes; after a while, you wil
 
 So let us implement the example outline in the diagram:
 
-```{python}
+```{python, results='hold'}
 
 def add(value_a, value_b):
     """
@@ -277,7 +277,7 @@ It is *essential* to write short, but proper documentation for our functions. Th
 The documentation string, also known as the *docstring*, is always written inside triple quotation marks. The *docstring* must be the implemented on the *very first line* following the declaration of the function to be recognised as the documentation:
 </p>
 
-```{python} 
+```{python,results='hold'} 
 def add(value_a, value_b):
     """
     Calculates the sum of 2 numeric values
@@ -336,7 +336,7 @@ Re-implement the function you defined in the previous [Do it Yourself](#diy:func
 	
 ## DIY ANSWER
 
-```{python}
+```{python, results='hold'}
 def find_tata(seq):
     """
     Finds the location of the TATA-box,
@@ -392,7 +392,7 @@ The default value defined for *optional arguments* can in theory be an instance 
 To define functions with optional arguments, we need to assign to them a default value. Remember that input arguments are variables with a specific scope. As a result, we can treat our input argument as variables and assign them a value:
 </p>
 
-```{python}
+```{python, results='hold'}
 def prepare_seq(seq, name, upper=False):
     """
     Prepares a sequence to be displayed.
@@ -454,7 +454,7 @@ Do not forget to update the *docstring* of your function.
 	
 ## DIY ANSWER
 
-```{python}
+```{python, results='hold'}
 def find_tata(seq, upper=False):
     """
     Finds the location of the TATA-box,
@@ -498,7 +498,7 @@ It is possible to have more than one <kbd>return</kbd> in a function. This is us
 
 This means that we can simplify the process as follows:
 
-```{python}
+```{python, results='hold'}
 def prepare_seq(seq, name, upper=False):
     """
     Prepares a sequence to be displayed.
@@ -565,7 +565,7 @@ So if you need to get more things done, do not write more code in one function. 
 
 ![](fig/mini_toolbox.png)
 
-```{python}
+```{python, results='hold'}
 def mean(arr):
     """
     Calculates the mean of an array.
@@ -585,7 +585,7 @@ def mean(arr):
 	
 Now that we have function to calculate the *mean*, we can go ahead and write a function to calculate the variance, which itself relies on *mean*:
 	
-```{python}
+```{python, results='hold'}
 def variance(arr):
     """
     Calculates the variance of an array.
@@ -632,7 +632,7 @@ Now that we have a function to calculate the *variance*, we could easily go on t
 	
 The standard deviation is calculated from the square root of variance. We can easily implement this in a new function as follows:
 	
-```{python}
+```{python, results='hold'}
 def stan_dev(arr):
     """
     Calculates the standard deviation of an array.
@@ -684,7 +684,7 @@ the function should return the above dictionary:
 	
 ## DIY ANSWER
 
-```{python}
+```{python, results='hold'}
 def count_values(arr):
     """
     Converts an array into a dictionary of
@@ -759,7 +759,7 @@ STD of array 2 :  0.14357537702854514
 
 ## Please check these solutions only after submitting the assignments.
 
-```{python}
+```{python, results='hold'}
 def mean(arr): 
     """
     Calculates the mean of an array.

@@ -82,7 +82,7 @@ When constructing a long ```dict``` with several *items* that span over several 
 	
 We can therefore implement the diagram displayed in [Figure](#assArr) in Python as follows:
 
-```{python}
+```{python, results='hold'}
 
 protein_kinases = {
   'PKA': 'Involved in regulation of glycogen, sugar, and lipid metabolism.',
@@ -270,7 +270,7 @@ protein = {
 
 We can add new *items* to our dictionary or alter the existing ones:
 
-```{python}
+```{python, results='hold'}
 # Adding a new item:
 protein['chromosome'] = 7
 	
@@ -386,7 +386,7 @@ Failed to alter the dictionary.
 ::::::::::::::::: solution
 	
 ## DIY ANSWER
-```{python}
+```{python, results='hold'}
 signal = {
 		    'name': 'Beta-Galactosidase', 
 		    'pdb': '4V40'
@@ -410,7 +410,7 @@ As explained earlier the section, dictionaries are amongst the most powerful bui
 
 It is very easy to implement nested dictionaries: 
 
-```{python}
+```{python, results='hold'}
 # Parent dictionary
 pkc_family = {
     # Child dictionary A:
@@ -475,7 +475,7 @@ Using the dictionary, display the *gene* for *Haemophilia A*.
 	
 ## DIY ANSWER
 
-```{python}
+```{python, results='hold'}
 genetic_diseases = {
     'Cystic fibrosis': {
         'name': 'Cystic fibrosis transmembrane conductance regulator',
@@ -628,7 +628,7 @@ print(structures['LacY'].values())
 
 We can then extract specific information to conduct an analysis. Note that the <kbd>len()</kbd> function in this context returns the number of *keys* in the parent dictionary only.
 
-```{python}
+```{python, results='hold'}
 sum_resolutions = 0
 res = 'resolution'
 	
@@ -767,7 +767,7 @@ One of the most useful tools that we can create using nothing more than a ```for
 
 Here, we are essentially iterating through a sequence of DNA nucleotides (<span style="color: rgb(32, 121, 77);">sequence</span>), extracting one character per loop cycle from our string (<span style="color: rgb(32, 121, 77);">nucleotide</span>). We then use that character as a *key* to retrieve its corresponding *value* from our a dictionary (<span style="color: rgb(32, 121, 77);">dna2rna</span>). Once we get the *value*, we add it to the variable that we initialised using an empty string outside the scope of our ```for```-loop (<span style="color: rgb(32, 121, 77);">rna_sequence</span>) as discussed in [subsection](#subsubsec:mathematicalOperations:nonNumerics). At the end of the process, the variable <span style="color: rgb(32, 121, 77);">rna_sequence</span> will contain a converted version of our sequence. 
 
-```{python}
+```{python, results='hold'}
 sequence = 'CCCATCTTAAGACTTCACAAGACTTGTGAAATCAGACCACTGCTCAATGCGGAACGCCCG'
 	
 dna2rna = {"A": "U", "T": "A", "C": "G", "G": "C"}

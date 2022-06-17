@@ -858,7 +858,7 @@ for value in numbers:
 
 ### Q4
 
-```{python}
+```{python, results='hold'}
 numbers = [7, 16, 0.3, 0, 15, -4, 5, 3, 15]
 
 numbers_length = len(numbers)

@@ -1528,7 +1528,7 @@ print('Number of amino acids in a polyglutamine with 36 repeats:', polyq_peptide
 
 ## Q5
 
-```{python}
+```{python, results='hold'}
 print('Value:', amino_acids_per_codon, '- Type:', type(amino_acids_per_codon))
 	
 print('Value:', polyq_codons_length, '- Type:', type(polyq_codons_length))
@@ -1550,7 +1550,7 @@ No, ```polyq_peptide_length``` is an instance of type ```float```. This is becau
 
 ## Q7
 
-```{python}    
+```{python, results='hold'}    
 polyq_peptide_length = polyq_codons_length // amino_acids_per_codon
 	
 print('Number of amino acids in a polyglutamine with 36 repeats:', polyq_peptide_length)
@@ -1635,7 +1635,7 @@ y1 is equal to y2: [True/False]
 
 ## Q1
    
-```{python}
+```{python, results='hold'}
 a = 15
 b = 4
 		
@@ -1653,7 +1653,7 @@ print('y2 =', y_2)
 
 ## Q2
 
-```{python}
+```{python, results='hold'}
     
 equivalence = y_1 == y_2
 		
@@ -1956,7 +1956,7 @@ Some logical operations may be written in different ways. However, we should alw
 
 To that end, you may want to use variables to split complex statements down to smaller portions:
 
-```{python}
+```{python, results='hold'}
 age_a, age_b = 15, 35
 	
 are_positive = age_a > 0 and age_b > 0
@@ -2095,9 +2095,9 @@ print('7.', (12 / a) and (a * 4) < b)
 
   * Displays the text ```Please press enter to continue...```, and waits for the user to press enter.
   * Once the user pressed enter, the program should display ```Welcome to my programme!``` before it terminates.
-<p style='text-align: justify;'>  
+ 
 3. We have an enzyme whose reaction velocity is $v=50~mol \cdot L^{-1} \cdot s^{-1}$ at the substrate concentration of $[S] = K_{m} = 2.5~mol \cdot L^{-1}$. Work out the maximum reaction velocity or $V_{\max}$ for this enzyme using the Michaelis-Menten equation:
-</p>		
+		
 
 		$$v = \frac{V_{\max} [\textrm{S}]}{K_{m} + [\textrm{S}]}$$   
 
