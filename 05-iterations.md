@@ -1034,17 +1034,11 @@ numbers_variance = variance_numerator / variance_denominator
 # ---------------------------------------------------------
 
 print("Mean:", numbers_mean)
-```
-
-```{.output}
-Mean: 6.366666666666666
-```
-
-```python
 print("Variance:", numbers_variance)
 ```
 
 ```{.output}
+Mean: 6.366666666666666
 Variance: 48.919999999999995
 ```
 ::::::::::::::::::::: 		 

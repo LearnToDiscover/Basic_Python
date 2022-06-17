@@ -1881,26 +1881,14 @@ Number of amino acids in a polyglutamine with 36 repeats: 36.0
 ```python
 print('Value:', amino_acids_per_codon, '- Type:', type(amino_acids_per_codon))
 	
-```
-
-```{.output}
-Value: 3 - Type: <class 'int'>
-```
-
-```python
 print('Value:', polyq_codons_length, '- Type:', type(polyq_codons_length))
 	
-```
-
-```{.output}
-Value: 108 - Type: <class 'int'>
-```
-
-```python
 print('Value:', polyq_peptide_length, '- Type:', type(polyq_peptide_length))
 ```
 
 ```{.output}
+Value: 3 - Type: <class 'int'>
+Value: 108 - Type: <class 'int'>
 Value: 36.0 - Type: <class 'float'>
 ```
 
@@ -1924,35 +1912,17 @@ polyq_peptide_length = polyq_codons_length // amino_acids_per_codon
 	
 print('Number of amino acids in a polyglutamine with 36 repeats:', polyq_peptide_length)
 	
-```
-
-```{.output}
-Number of amino acids in a polyglutamine with 36 repeats: 36
-```
-
-```python
 print('Value:', amino_acids_per_codon, '- Type:', type(amino_acids_per_codon))
 	
-```
-
-```{.output}
-Value: 3 - Type: <class 'int'>
-```
-
-```python
 print('Value:', polyq_codons_length, '- Type:', type(polyq_codons_length))
 	
-```
-
-```{.output}
-Value: 108 - Type: <class 'int'>
-```
-
-```python
 print('Value:', polyq_peptide_length, '- Type:', type(polyq_peptide_length))
 ```
 
 ```{.output}
+Number of amino acids in a polyglutamine with 36 repeats: 36
+Value: 3 - Type: <class 'int'>
+Value: 108 - Type: <class 'int'>
 Value: 36 - Type: <class 'int'>
 ```
 
@@ -2038,17 +2008,11 @@ y_1 = (a + b) ** 2
 y_2 = a ** 2 + 2 * a * b + b ** 2 
 		
 print('y1 =', y_1)
-```
-
-```{.output}
-y1 = 361
-```
-
-```python
 print('y2 =', y_2)
 ```
 
 ```{.output}
+y1 = 361
 y2 = 361
 ```
 
@@ -2060,21 +2024,14 @@ y2 = 361
 
 
 ```python
-    
 equivalence = y_1 == y_2
 		
 print('Where a =', a, ' and b=', b)
-```
-
-```{.output}
-Where a = 15  and b= 4
-```
-
-```python
 print('y1 is equal to y2:', equivalence)
 ```
 
 ```{.output}
+Where a = 15  and b= 4
 y1 is equal to y2: True
 ```
 :::::::::::::::::::::
@@ -2667,9 +2624,9 @@ print('7.', (12 / a) and (a * 4) < b)
 
   * Displays the text ```Please press enter to continue...```, and waits for the user to press enter.
   * Once the user pressed enter, the program should display ```Welcome to my programme!``` before it terminates.
-<p style='text-align: justify;'>  
+ 
 3. We have an enzyme whose reaction velocity is $v=50~mol \cdot L^{-1} \cdot s^{-1}$ at the substrate concentration of $[S] = K_{m} = 2.5~mol \cdot L^{-1}$. Work out the maximum reaction velocity or $V_{\max}$ for this enzyme using the Michaelis-Menten equation:
-</p>		
+		
 
 		$$v = \frac{V_{\max} [\textrm{S}]}{K_{m} + [\textrm{S}]}$$   
 
