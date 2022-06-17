@@ -538,26 +538,14 @@ Find and display the index of these values from the ```list``` of Fibonacci numb
 ```python
 print(fibonacci.index(1))
 		
-```
-
-```{.output}
-0
-```
-
-```python
 print(fibonacci.index(5))
 		
-```
-
-```{.output}
-4
-```
-
-```python
 print(fibonacci.index(21))
 ```
 
 ```{.output}
+0
+4
 7
 ```
 
@@ -698,39 +686,21 @@ It is also possible to perform *item assignment* over a *slice* containing any n
 ```python
 print('Before:', table)
 	
-```
-
-```{.output}
-Before: [5, 174, 5, 19, -1, 29, 'a text']
-```
-
-```python
 replacement = [-38, 0]
 	
 print('Replacement length:', len(replacement))
-```
-
-```{.output}
-Replacement length: 2
-```
-
-```python
 print('Replacement length:', len(table[2:4]))
 	
 # The replacement process:
-```
-
-```{.output}
-Replacement length: 2
-```
-
-```python
 table[2:4] = replacement
 	
 print('After:', table)
 ```
 
 ```{.output}
+Before: [5, 174, 5, 19, -1, 29, 'a text']
+Replacement length: 2
+Replacement length: 2
 After: [5, 174, -38, 0, -1, 29, 'a text']
 ```
 
@@ -820,17 +790,11 @@ Whilst that is a valid approach, Python's ```list``` provide us with <kbd>.pop()
 removed_value = table.pop(2)
 	
 print('Removed value:', removed_value)
-```
-
-```{.output}
-Removed value: 0
-```
-
-```python
 print(table)
 ```
 
 ```{.output}
+Removed value: 0
 [5, 12, -1, 29]
 ```
 
@@ -886,18 +850,11 @@ outlier_index = strand.index('M')
 outlier_value = strand.pop(outlier_index)
 		
 print('Removed from the strand:', outlier_value)
+print('New strand:', strand)
 ```
 
 ```{.output}
 Removed from the strand: M
-```
-
-```python
-print('New strand:', strand)
-	
-```
-
-```{.output}
 New strand: ['A', 'C', 'G', 'G', 'C', 'T', 'A']
 ```
 :::::::::::::::::
@@ -933,17 +890,11 @@ table = [1, 2, 3, 4]
 index = table.index(3)
 		
 print(index)
-```
-
-```{.output}
-2
-```
-
-```python
 print(table)
 ```
 
 ```{.output}
+2
 [1, 2, 3, 4]
 ```
 	
@@ -971,17 +922,11 @@ If we attempt to store the output of an operation that does not a return result 
 result = table.append(6)
 		
 print(result)
-```
-
-```{.output}
-None
-```
-
-```python
 print(table)
 ```
 
 ```{.output}
+None
 [1, 2, 3, 4, 5, 6]
 ```
 
@@ -1073,25 +1018,13 @@ A ```list``` is a collection of members that are independent of each other. Each
 table = [1, 2.1, 'abc']
 	
 print(type(table[0]))
-```
-
-```{.output}
-<class 'int'>
-```
-
-```python
 print(type(table[1]))
-```
-
-```{.output}
-<class 'float'>
-```
-
-```python
 print(type(table[2]))
 ```
 
 ```{.output}
+<class 'int'>
+<class 'float'>
 <class 'str'>
 ```
 <p style='text-align: justify;'> 
@@ -1189,17 +1122,11 @@ john_capital = 'John'
 john_small = 'john'
 		
 print(john_capital in items)
-```
-
-```{.output}
-True
-```
-
-```python
 print(john_small in items)
 ```
 
 ```{.output}
+True
 False
 ```
 :::::::::::::::::::::::::::::::::::: 
@@ -1930,17 +1857,11 @@ table = [1, 2, 2, 2, 15, 16]
 table_rev = reversed(table)
 		
 print("Result:", table_rev)
-```
-
-```{.output}
-Result: <list_reverseiterator object at 0x7fa13f52c730>
-```
-
-```python
 print("Type:", type(table_rev))
 ```
 
 ```{.output}
+Result: <list_reverseiterator object at 0x7f30d8efccd0>
 Type: <class 'list_reverseiterator'>
 ```
 
@@ -2885,26 +2806,19 @@ table = [[1, 2, 3], ['a', 'b'], [1.5, 'b', 4], [2]]
 
 table_length = len(table)
 print('length of Table:', table_length)
-```
 
-```{.output}
-length of Table: 4
-```
-
-```python
 reason = (
     "The length of a `list` is a function of its "
     "distinct members, regardless of their types."
 )
 
 print('')
-```
-
-```python
 print(reason)
 ```
 
 ```{.output}
+length of Table: 4
+
 The length of a `list` is a function of its distinct members, regardless of their types.
 ```
 
@@ -2925,21 +2839,8 @@ total_serine = human_pka_gamma.count("S")
 total_threonine = human_pka_gamma.count("T")
 
 print('Serine:', total_serine)
-```
-
-```{.output}
-Serine: 19
-```
-
-```python
 print('Threonine:', total_threonine)
-```
 
-```{.output}
-Threonine: 13
-```
-
-```python
 residues = [
     ['S', total_serine],
     ['T', total_threonine]
@@ -2948,6 +2849,8 @@ print(residues)
 ```
 
 ```{.output}
+Serine: 19
+Threonine: 13
 [['S', 19], ['T', 13]]
 ```
 

@@ -84,7 +84,6 @@ We can therefore implement the diagram displayed in [Figure](#assArr) in Python 
 
 
 ```python
-
 protein_kinases = {
   'PKA': 'Involved in regulation of glycogen, sugar, and lipid metabolism.',
   'PKC': 'Regulates signal transduction pathways such as the Wnt pathway.',
@@ -93,17 +92,11 @@ protein_kinases = {
 	
 print(protein_kinases)
 	
-```
-
-```{.output}
-{'PKA': 'Involved in regulation of glycogen, sugar, and lipid metabolism.', 'PKC': 'Regulates signal transduction pathways such as the Wnt pathway.', 'CK1': 'Controls the function of other proteins through phosphorylation.'}
-```
-
-```python
 print(type(protein_kinases))
 ```
 
 ```{.output}
+{'PKA': 'Involved in regulation of glycogen, sugar, and lipid metabolism.', 'PKC': 'Regulates signal transduction pathways such as the Wnt pathway.', 'CK1': 'Controls the function of other proteins through phosphorylation.'}
 <class 'dict'>
 ```
 
@@ -356,17 +349,12 @@ We can add new *items* to our dictionary or alter the existing ones:
 protein['chromosome'] = 7
 	
 print(protein)
-```
 
-```{.output}
-{'full name': 'Cystic fibrosis transmembrane conductance regulator', 'alias': 'CFTR', 'gene': 'CFTR', 'type': 'Membrane Protein', 'common mutations': ['Delta-F508', 'G542X', 'G551D', 'N1303K'], 'chromosome': 7}
-```
-
-```python
 print(protein['chromosome'])
 ```
 
 ```{.output}
+{'full name': 'Cystic fibrosis transmembrane conductance regulator', 'alias': 'CFTR', 'gene': 'CFTR', 'type': 'Membrane Protein', 'common mutations': ['Delta-F508', 'G542X', 'G551D', 'N1303K'], 'chromosome': 7}
 7
 ```
 
@@ -521,7 +509,6 @@ if 'pdb id' in signal and 'pdb' not in signal:
     print('Contains the new key, but not the old one.')
 else:
     print('Failed to alter the dictionary.')
-    
 ```
 
 ```{.output}
@@ -1038,17 +1025,11 @@ for nucleotide in sequence:
     rna_sequence += dna2rna[nucleotide]
 	
 print('DNA:', sequence)
-```
-
-```{.output}
-DNA: CCCATCTTAAGACTTCACAAGACTTGTGAAATCAGACCACTGCTCAATGCGGAACGCCCG
-```
-
-```python
 print('RNA:', rna_sequence)
 ```
 
 ```{.output}
+DNA: CCCATCTTAAGACTTCACAAGACTTGTGAAATCAGACCACTGCTCAATGCGGAACGCCCG
 RNA: GGGUAGAAUUCUGAAGUGUUCUGAACACUUUAGUCUGGUGACGAGUUACGCCUUGCGGGC
 ```
 

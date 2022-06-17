@@ -29,7 +29,7 @@ exercises: 2
 
 <br>
 <p align = "center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kBlxg1lV5NQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hcvGRK8FvQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 <br>
 <p align = "center">
@@ -116,7 +116,6 @@ So let us implement the example outline in the diagram:
 
 
 ```python
-
 def add(value_a, value_b):
     """
     Calculates the sum of 2 numeric values
